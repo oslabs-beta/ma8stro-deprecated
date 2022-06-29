@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Nav from '../lib/Nav.svelte';
 
 	let ready: boolean = false;
 	onMount(() => (ready = true));
 </script>
 
+<Nav />
 <div class="dragbar" />
 
 {#if ready}
